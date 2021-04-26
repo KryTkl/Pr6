@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\StoreSalesClusters.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>StoreSalesClusters.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Total_Sales" source="R-DATA:" type="Double" />
+            <Field name="Pct_Sum_Dry_Grocery" source="R-DATA:" type="Double" />
+            <Field name="Pct_Sum_Dairy" source="R-DATA:" type="Double" />
+            <Field name="Pct_Sum_Frozen_food" source="R-DATA:" type="Double" />
+            <Field name="Pct_Meat" source="R-DATA:" type="Double" />
+            <Field name="Pct_Produce" source="R-DATA:" type="Double" />
+            <Field name="Pct_Floral" source="R-DATA:" type="Double" />
+            <Field name="Pct_Deli" source="R-DATA:" type="Double" />
+            <Field name="Pct_Bakery" source="R-DATA:" type="Double" />
+            <Field name="Pct_General_Merchandise" source="R-DATA:" type="Double" />
+            <Field name="Cluster" source="R-DATA:" type="Int32" />
+            <Field name="Address" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storeinformation.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storeinformation.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storeinformation.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storeinformation.csv" type="V_String" />
+            <Field name="Type" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storeinformation.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storedemographicdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age0to9" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age10to17" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age18to24" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age25to29" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age30to39" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age40to49" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age50to64" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age65Plus" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdLTHS" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdHSGrad" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdSomeCol" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdAssociate" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdBachelor" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdMaster" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdProfSchl" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdDoctorate" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz1Per" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz2Per" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz3Per" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz4Per" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz5PlusPer" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHIncU25K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc25Kto50K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc50Kto75K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc75Kto100K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc100Kto150K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc150Kto250K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc250KPlus" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopAsian" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopBlack" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopHispanic" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopMulti" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopNativeAmer" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopOther" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopPacIsl" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopWhite" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal0to100K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal100Kto200K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal200Kto300K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal300Kto400K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal400Kto500K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal500Kto750K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal750KPlus" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopDens" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Cluster" selected="True" type="V_String" size="11" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Store" selected="True" />
+            <SelectField field="Age0to9" selected="True" type="Double" size="8" />
+            <SelectField field="Age10to17" selected="True" type="Double" size="8" />
+            <SelectField field="Age18to24" selected="True" type="Double" size="8" />
+            <SelectField field="Age25to29" selected="True" type="Double" size="8" />
+            <SelectField field="Age30to39" selected="True" type="Double" size="8" />
+            <SelectField field="Age40to49" selected="True" type="Double" size="8" />
+            <SelectField field="Age50to64" selected="True" type="Double" size="8" />
+            <SelectField field="Age65Plus" selected="True" type="Double" size="8" />
+            <SelectField field="EdLTHS" selected="True" type="Double" size="8" />
+            <SelectField field="EdHSGrad" selected="True" type="Double" size="8" />
+            <SelectField field="EdSomeCol" selected="True" type="Double" size="8" />
+            <SelectField field="EdAssociate" selected="True" type="Double" size="8" />
+            <SelectField field="EdBachelor" selected="True" type="Double" size="8" />
+            <SelectField field="EdMaster" selected="True" type="Double" size="8" />
+            <SelectField field="EdProfSchl" selected="True" type="Double" size="8" />
+            <SelectField field="EdDoctorate" selected="True" type="Double" size="8" />
+            <SelectField field="HHSz1Per" selected="True" type="Double" size="8" />
+            <SelectField field="HHSz2Per" selected="True" type="Double" size="8" />
+            <SelectField field="HHSz3Per" selected="True" type="Double" size="8" />
+            <SelectField field="HHSz4Per" selected="True" type="Double" size="8" />
+            <SelectField field="HHSz5PlusPer" selected="True" type="Double" size="8" />
+            <SelectField field="HHIncU25K" selected="True" type="Double" size="8" />
+            <SelectField field="HHInc25Kto50K" selected="True" type="Double" size="8" />
+            <SelectField field="HHInc50Kto75K" selected="True" type="Double" size="8" />
+            <SelectField field="HHInc75Kto100K" selected="True" type="Double" size="8" />
+            <SelectField field="HHInc100Kto150K" selected="True" type="Double" size="8" />
+            <SelectField field="HHInc150Kto250K" selected="True" type="Double" size="8" />
+            <SelectField field="HHInc250KPlus" selected="True" type="Double" size="8" />
+            <SelectField field="PopAsian" selected="True" type="Double" size="8" />
+            <SelectField field="PopBlack" selected="True" type="Double" size="8" />
+            <SelectField field="PopHispanic" selected="True" type="Double" size="8" />
+            <SelectField field="PopMulti" selected="True" type="Double" size="8" />
+            <SelectField field="PopNativeAmer" selected="True" type="Double" size="8" />
+            <SelectField field="PopOther" selected="True" type="Double" size="8" />
+            <SelectField field="PopPacIsl" selected="True" type="Double" size="8" />
+            <SelectField field="PopWhite" selected="True" type="Double" size="8" />
+            <SelectField field="HVal0to100K" selected="True" type="Double" size="8" />
+            <SelectField field="HVal100Kto200K" selected="True" type="Double" size="8" />
+            <SelectField field="HVal200Kto300K" selected="True" type="Double" size="8" />
+            <SelectField field="HVal300Kto400K" selected="True" type="Double" size="8" />
+            <SelectField field="HVal400Kto500K" selected="True" type="Double" size="8" />
+            <SelectField field="HVal500Kto750K" selected="True" type="Double" size="8" />
+            <SelectField field="HVal750KPlus" selected="True" type="Double" size="8" />
+            <SelectField field="PopDens" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="282" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="366" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">80</Value>
+          <Value name="validation pct">20</Value>
+          <Value name="rand seed">3</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings>
+        <Position x="474" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model.name">Boosted_cluster</Value>
+          <Value name="select.target">Cluster</Value>
+          <Value name="select.predictors">Store=False,Total_Sales=False,Pct_Sum_Dry_Grocery=False,Pct_Sum_Dairy=False,Pct_Sum_Frozen_food=False,Pct_Meat=False,Pct_Produce=False,Pct_Floral=False,Pct_Deli=False,Pct_Bakery=False,Pct_General_Merchandise=False,Cluster=False,Address=False,City=False,State=False,Zip=False,Type=False,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=True,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=True,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=True,PopWhite=True,HVal0to100K=True,HVal100Kto200K=True,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=True,PopDens=True</Value>
+          <Value name="use.weights">False</Value>
+          <Value name="select.weights">Total_Sales</Value>
+          <Value name="marginal.plots">False</Value>
+          <Value name="plot.min.importance">2.5</Value>
+          <Value name="type.distribution">False</Value>
+          <Value name="type.continuous">True</Value>
+          <Value name="dist.gaussian">True</Value>
+          <Value name="dist.laplace">False</Value>
+          <Value name="dist.t">False</Value>
+          <Value name="t.df">4</Value>
+          <Value name="type.count">False</Value>
+          <Value name="type.binomial">False</Value>
+          <Value name="dist.bernoulli">True</Value>
+          <Value name="dist.adaboost">False</Value>
+          <Value name="type.multinomial">False</Value>
+          <Value name="n.trees">4000</Value>
+          <Value name="assess.cv">True</Value>
+          <Value name="num.folds">5</Value>
+          <Value name="n.cores">1</Value>
+          <Value name="assess.test">False</Value>
+          <Value name="train.fraction">50.0</Value>
+          <Value name="assess.oob">False</Value>
+          <Value name="bag.fraction">50.0</Value>
+          <Value name="shrinkage">0.0020</Value>
+          <Value name="interaction.depth">1</Value>
+          <Value name="n.minobsinnode">10</Value>
+          <Value name="rand.seed">1</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\koraypc\AppData\Local\Temp\Engine_3716_b601560e898548fe8f415ae24afb711e_\Engine_5780_5cc18b97b1f34ba4a62f15169bac459a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storedemographicdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age0to9" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age10to17" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age18to24" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age25to29" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age30to39" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age40to49" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age50to64" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="Age65Plus" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdLTHS" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdHSGrad" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdSomeCol" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdAssociate" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdBachelor" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdMaster" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdProfSchl" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="EdDoctorate" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz1Per" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz2Per" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz3Per" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz4Per" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz5PlusPer" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHIncU25K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc25Kto50K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc50Kto75K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc75Kto100K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc100Kto150K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc150Kto250K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc250KPlus" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopAsian" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopBlack" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopHispanic" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopMulti" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopNativeAmer" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopOther" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopPacIsl" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopWhite" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal0to100K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal100Kto200K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal200Kto300K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal300Kto400K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal400Kto500K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal500Kto750K" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal750KPlus" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+            <Field name="PopDens" size="254" source="File: C:\Users\koraypc\Documents\Udacity\7.Segmentation-and-Clustering\FinalProject\storedemographicdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="570" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="666" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="774" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;=</Operator>
+            <Field>RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-04-25 16:26:34</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>85</Operand>
+              <StartDate>2021-04-25 16:26:34</StartDate>
+              <EndDate>2021-04-25 16:26:34</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] &lt;= 85</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="Score">
+        <Position x="870" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="966" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Score_1] &gt; [Score_2] and [Score_3] THEN &quot;1&quot; ELSEIF [Score_2]&gt;[Score_1] and [Score_3] THEN &quot;2&quot; ELSE &quot;3&quot; ENDIF" field="Cluster" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cluster = IF [Score_1] &gt; [Score_2] and [Score_3] THEN "1" ELSEIF [Score_2]&gt;[Scor...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1062" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\koraypc\AppData\Local\Temp\Engine_3716_b601560e898548fe8f415ae24afb711e_\Engine_5780_0fc06bbcf4444310900dd23613f1d45e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Estimation" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Report" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="22" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="False" />
+      <Destination ToolID="22" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>3-BoostedScoreWF</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
